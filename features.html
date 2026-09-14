@@ -3,92 +3,49 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Features - DiveTower Dive Shop Management Software, Explained in Plain Words</title>
+<title>Features - DiveTower Dive Shop Management Software</title>
 <link rel="icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<meta name="description" content="Every DiveTower feature, screen by screen: day planner, money overview, salaries, gear allocation, waivers, customer app with course videos, and apps for every staff role.">
+<meta name="description" content="Complete feature overview of DiveTower dive shop management system">
 <link rel="canonical" href="https://diveshopsolutions.com/features.html">
-<meta property="og:title" content="Features - DiveTower Dive Shop Management Software, Explained in Plain Words">
-<meta property="og:description" content="Every DiveTower feature, screen by screen: day planner, money overview, salaries, gear allocation, waivers, customer app with course videos, and apps for every staff role.">
-<meta property="og:url" content="https://diveshopsolutions.com/features.html">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="DiveTower">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap" rel="stylesheet">
 <style>
-:root{
-  --deep:#08344a;        /* deep water */
-  --mid:#0d5c7a;         /* mid water */
-  --surface:#eef6f8;     /* surface light */
-  --white:#ffffff;
-  --aqua:#19b4c8;        /* accent */
-  --flag:#d33a2c;        /* dive-flag red, exclusivity only */
-  --ink:#12303e;
-  --line:#cfe2e8;
-  --ph:#dbeaee;          /* placeholder */
-}
+:root{--deep:#08344a;--mid:#0d5c7a;--surface:#eef6f8;--white:#ffffff;--aqua:#19b4c8;--flag:#d33a2c;--ink:#12303e;--line:#cfe2e8}
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
 body{font-family:'Archivo',sans-serif;color:var(--ink);background:var(--white);line-height:1.6;font-size:17px}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-
-/* ---------- header ---------- */
+a:focus-visible{outline:3px solid var(--aqua);outline-offset:2px}
 .top{background:var(--deep);color:var(--white);padding:14px 24px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
 .top .logo{font-weight:800;font-size:1.25rem;letter-spacing:-0.02em}
 .top .logo span{color:var(--aqua)}
 .top nav{margin-left:auto;display:flex;gap:20px;flex-wrap:wrap}
 .top nav a{color:#bcd9e4;text-decoration:none;font-size:.95rem}
-.top nav a:hover,.top nav a:focus-visible{color:var(--white)}
-a:focus-visible,button:focus-visible{outline:3px solid var(--aqua);outline-offset:2px}
-
-/* ---------- hero ---------- */
-.hero{background:linear-gradient(180deg,var(--deep) 0%,var(--mid) 100%);color:var(--white);padding:72px 24px 88px;text-align:left}
-.hero-inner{max-width:880px;margin:0 auto}
-.hero h1{font-size:clamp(2.1rem,5vw,3.4rem);font-weight:800;letter-spacing:-0.03em;line-height:1.1;max-width:18ch}
-.hero p.lead{margin-top:20px;font-size:1.15rem;max-width:60ch;color:#dcecf2}
-.exclusive{margin-top:32px;background:var(--flag);color:var(--white);border-radius:10px;padding:20px 24px;max-width:640px;position:relative;overflow:hidden}
-.exclusive::after{content:"";position:absolute;top:-40%;right:-30px;width:120px;height:180%;background:var(--white);opacity:.18;transform:rotate(24deg)}
-.exclusive strong{display:block;font-size:1.25rem;font-weight:800;letter-spacing:-0.01em}
-.exclusive em{font-style:normal;font-size:.98rem;display:block;margin-top:6px;color:#ffe4e0}
-.count{font-variant-numeric:tabular-nums}
-
-/* ---------- section chrome ---------- */
-main{max-width:880px;margin:0 auto;padding:0 24px}
-section.app{padding:64px 0 24px;border-top:1px solid var(--line)}
-section.app:first-of-type{border-top:none}
-section.app h2{font-size:clamp(1.6rem,3.4vw,2.2rem);font-weight:800;letter-spacing:-0.02em;color:var(--deep)}
-section.app p.intro{margin-top:12px;max-width:64ch;color:#33525f}
-.feature{margin-top:40px}
-.feature h3{font-size:1.22rem;font-weight:700;color:var(--deep);letter-spacing:-0.01em}
-.feature h4{font-size:1.05rem;font-weight:700;color:var(--mid);margin-top:26px}
-.feature p{margin-top:10px;max-width:66ch}
-.feature ul{margin:10px 0 0 1.2em;max-width:64ch}
-.feature li{margin-top:4px}
-
-/* ---------- screenshot placeholders ---------- */
-.shot{margin:20px 0 6px;background:var(--ph);border:1px dashed #9ec4cf;border-radius:8px;min-height:150px;display:flex;align-items:center;justify-content:center;padding:28px 20px}
-.shot span{color:#4d7583;font-size:.92rem;text-align:center;max-width:44ch}
-.shot span::before{content:"📷 ";opacity:.7}
-
-/* ---------- jump list ---------- */
-.jump{background:var(--surface);border-radius:12px;padding:26px 28px;margin:56px auto 0;max-width:880px}
-.jump h2{font-size:1.05rem;color:var(--mid);font-weight:700;margin-bottom:12px}
-.jump ol{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px 24px}
-.jump a{color:var(--deep);text-decoration:none;font-weight:600;font-size:.98rem;display:inline-block;padding:4px 0}
-.jump a:hover{color:var(--aqua)}
-
-
-/* ---------- CTA ---------- */
-.cta{background:var(--deep);color:var(--white);text-align:center;padding:72px 24px;margin-top:72px}
-.cta h2{font-size:clamp(1.7rem,3.5vw,2.4rem);font-weight:800;letter-spacing:-0.02em}
-.cta p{margin-top:14px;color:#cfe4ec;max-width:56ch;margin-left:auto;margin-right:auto}
-.cta .seats{display:inline-block;margin-top:26px;background:var(--flag);border-radius:8px;padding:12px 22px;font-weight:700}
-.cta .btn{display:inline-block;margin-top:26px;margin-left:14px;background:var(--aqua);color:var(--deep);border-radius:8px;padding:12px 26px;font-weight:800;text-decoration:none}
-.cta .btn:hover{background:#3fd0e2}
+.top nav a:hover{color:var(--white)}
+.hero{background:linear-gradient(180deg,var(--deep) 0%,var(--mid) 100%);color:var(--white);padding:64px 24px 72px}
+.hero-inner{max-width:920px;margin:0 auto}
+.hero h1{font-size:clamp(2rem,4.6vw,3rem);font-weight:800;letter-spacing:-0.03em;line-height:1.1}
+.hero p{margin-top:16px;font-size:1.12rem;max-width:56ch;color:#dcecf2}
+.jump{background:var(--surface);padding:40px 24px;margin-top:0}
+.jump h2{max-width:920px;margin:0 auto;font-size:1.1rem;font-weight:700;color:var(--deep);margin-bottom:20px}
+.jump ol{max-width:920px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;list-style:none}
+.jump li{font-size:.95rem}
+.jump a{color:var(--mid);text-decoration:none;font-weight:600}
+.jump a:hover{color:var(--deep)}
+main{max-width:920px;margin:0 auto;padding:0 24px}
+section{padding:64px 0;border-top:1px solid var(--line)}
+section h2{font-size:2rem;font-weight:800;letter-spacing:-0.02em;color:var(--deep);margin-bottom:12px}
+section>p{color:#33525f;max-width:62ch;margin-bottom:48px}
+.feature{margin-bottom:56px}
+.feature h3{font-size:1.3rem;font-weight:700;color:var(--deep);margin-bottom:16px}
+.feature p{color:#33525f;margin-bottom:12px}
+.feature img{display:block;max-width:100%;border-radius:8px;margin-top:20px}
+.app-solo{padding:64px 0;border-top:1px solid var(--line)}
+.app-solo h2{font-size:2rem;font-weight:800;color:var(--deep);margin-bottom:12px}
+.app-solo p{color:#33525f;margin-bottom:32px}
+.app-solo img{display:block;max-width:100%;border-radius:8px;margin-top:20px}
 footer{background:#062435;color:#8fb3c2;text-align:center;padding:26px;font-size:.9rem}
-@media(max-width:600px){.cta .btn{margin-left:0;display:block;max-width:260px;margin-inline:auto}}
 </style>
 </head>
 <body>
@@ -109,16 +66,16 @@ footer{background:#062435;color:#8fb3c2;text-align:center;padding:26px;font-size
 <div class="hero">
   <div class="hero-inner">
     <h1>Have a look at every screen. Everything it does.</h1>
-    <p class="lead">DiveTower runs your whole shop, every detail. Here you can see how that looks.</p>
-
+    <p>DiveTower runs your whole shop, every detail. Here you can see how that looks.</p>
   </div>
 </div>
 
 <div class="jump">
-  <h2>Jump to an app</h2>
+  <h2>Jump to:</h2>
   <ol>
     <li><a href="#platform">Platform-wide</a></li>
     <li><a href="#master">Master app</a></li>
+    <li><a href="#settings">Shop Settings</a></li>
     <li><a href="#instructor">Instructor app</a></li>
     <li><a href="#taxi">Taxi app</a></li>
     <li><a href="#kitchen">Kitchen app</a></li>
@@ -130,323 +87,358 @@ footer{background:#062435;color:#8fb3c2;text-align:center;padding:26px;font-size
 
 <main>
 
-<!-- ================= PLATFORM ================= -->
-<section class="app" id="platform">
+<!-- PLATFORM-WIDE -->
+<section id="platform">
   <h2>Platform-wide</h2>
-  <p class="intro">These features work everywhere, in every app, for every role.</p>
-
-  <div class="shot"><span>DiveTower apps diagram — how all the apps connect</span></div>
+  <p>These features work everywhere, in every app, for every role.</p>
 
   <div class="feature">
     <h3>Ten languages</h3>
-    <p>Everything a customer sees is available in ten languages: English, Thai, French, German, Dutch, Spanish, Italian, Chinese, Korean, and Japanese. This covers the booking form, confirmation emails, the customer app, and all waiver text. The system picks the right language automatically, based on what the customer chose. You can even set a different preparation video for each language, and each customer automatically sees the right one.</p>
+    <p>Everything a customer sees is available in ten languages: English, Thai, French, German, Dutch, Spanish, Italian, Chinese, Korean, and Japanese. This covers the booking form, confirmation emails, the customer app, and all waiver text. The system picks the right language automatically, based on what the customer chose. A shop can even set a different preparation video for each language, and each customer automatically sees the right one.</p>
+    <img src="03_Ten languages.png" alt="Ten languages feature">
   </div>
 
   <div class="feature">
     <h3>Who did what</h3>
-    <p>The system keeps track of who did key actions, not just what happened. Every payment records who collected it. Every deleted booking records who deleted it, and why. Every salary payment records who marked it as paid. This makes it easy to check back later, if there is ever a question about something.</p>
+    <p>The system keeps track of who did key actions. Every payment records who collected it. Every deleted booking records who deleted it, and why. Every salary payment records who marked it as paid. This makes it easy to check back later, if there is ever a question about something.</p>
+    <img src="05_Who did what.png" alt="Who did what audit trail">
   </div>
 
   <div class="feature">
     <h3>Keeping your data safe</h3>
-    <p>Shop data is not stored on any one phone or computer. It is stored securely online. If a phone is lost or broken, no shop data is lost with it.</p>
-    <p>The system saves a full backup automatically, every 30 minutes. This backup is kept in a separate, secure location — not the same place the everyday data lives. This means there are always two safe copies.</p>
+    <p>Shop data is not stored on any one phone or computer. It is stored securely online. If a phone is lost or broken, no shop data is lost with it. The system saves a full backup automatically, every 30 minutes. This backup is kept in a separate, secure location — not the same place the everyday data lives. This means there are always two safe copies.</p>
+    <img src="07_Keeping your data safe.png" alt="Data safety and backups">
   </div>
 
   <div class="feature">
     <h3>Works everywhere, even offline</h3>
-    <p>Every app installs to a phone's home screen, like a normal app. No app store is needed. The staff apps, and the public booking form, still work with a weak or lost connection. Actions are saved and sent once the connection comes back. Staff on a boat with bad signal are never blocked from doing their job.</p>
+    <p>Every app installs to a phone's home screen, like a normal app. No app store is needed. The staff apps, and the public booking form, still work with a weak or lost connection. Actions are saved and sent once the connection comes back. This means staff on a boat with bad signal are never blocked from doing their job.</p>
+    <img src="09_Works everywhere, even offline.png" alt="Offline functionality">
   </div>
 
   <div class="feature">
     <h3>Push notifications</h3>
     <p>Besides chat, DiveTower sends alerts to staff about things that need attention: a booking still missing an instructor, taxi, or boat for tomorrow; a late booking waiting for approval; a customer's insurance details, sent automatically before their dive day; and a review request, sent to customers after their trip.</p>
-  </div>
-
-  <div class="feature">
-    <h3>Built for many shops, private to each one</h3>
-    <p>DiveTower runs many dive shops on one platform at the same time. Each shop's data, staff, pricing, and branding stay completely separate. No shop can see another shop's data. New shops go through a guided setup process.</p>
+    <img src="11_Push notifications.png" alt="Push notifications">
   </div>
 </section>
 
-<!-- ================= MASTER ================= -->
-<section class="app" id="master">
-  <h2>Master app</h2>
-  <p class="intro">The owner's and manager's view. The whole shop, in one place.</p>
+<!-- MASTER APP -->
+<section id="master">
+  <h2>Master App</h2>
+  <p>Complete control of your shop. One place for bookings, money, staff, and everything else.</p>
 
   <div class="feature">
     <h3>The Day tab</h3>
-    <p>The Day tab shows every booking for the day, each one a card or a row. It shows who is diving, their activity, their language, their instructor, how and when they get picked up, their resort, their meal, and which boat or trip they are on.</p>
-    <p>Some activities have many dives. You can give different dives to different instructors — one does the pool session, another does the boat dives.</p>
-    <p>If something important is missing, the field turns red: no instructor set, no driver set for a taxi pickup, no time set for a boat pickup, no resort, no meal, or no boat. Snorkeling is the exception — it is normal for snorkeling to have no instructor, so it does not turn red.</p>
-    <div class="shot"><span>Day tab, showing a booking card with a red-flagged missing field</span></div>
-    <p>Staff can select many bookings at once — pay them all together, or move them all to a new date together.</p>
-    <p>Tapping a booking opens the full customer record: language, email, phone, nationality, age, date of birth, with a button to email the customer directly. Notes and who booked them. Gear sizes — height, weight, shoe size — and the app calculates BCD, wetsuit, and fin size from these numbers. Whether the customer brings their own gear. Their diving level, how many dives they have done, and their last dive. Their meal. Badges for liability waiver, medical form, and snorkel waiver — each shows signed or not signed. A clear warning badge shows if the customer has a medical issue. If a customer already has a doctor's fit-to-dive declaration, they can upload a photo of it instead of just ticking the medical box — even several pages. If a booking is cancelled, a refund banner appears, with a button to undo it. From this screen, staff can also move the booking to a new date, see all past payments, get a link to send the customer, or show a QR code for the customer's own app.</p>
-    <div class="shot"><span>Customer details card — contact info, gear sizes, and waiver status badges</span></div>
-  </div>
-
-  <div class="feature">
-    <h3>The Week tab</h3>
-    <p>The Week tab shows the same booking information for a full week. It helps with planning ahead.</p>
-    <div class="shot"><span>Week tab</span></div>
-  </div>
-
-  <div class="feature">
-    <h3>Money Overview</h3>
-    <p>All the shop's money information in one place. Four boxes are always shown, no matter which time period is selected: money paid today, money still owed by customers, money owed to agents and resorts, and refunds that still need a decision. If a customer pays an agent directly, that amount is removed from what the shop owes the agent — automatically.</p>
-    <p>Below the boxes, staff can pick a longer period: a week, a month, a year, or a custom range. A single day shows a simple list of payments. A longer period shows income and unpaid amounts broken down six ways: by activity, by payment method, by instructor, by nationality, by language, and by resort — each with a table and a bar chart. There is also a meal count, a payment method summary, totals for customers, revenue, paid, and open amounts, and a full history of past payouts.</p>
-    <div class="shot"><span>Money Overview — charts and breakdown tables</span></div>
+    <p>The Day tab shows every booking for the day. It shows who is diving, their activity, language, instructor, pickup method and time, resort, meal, and boat or trip. You can give different dives of one activity to different instructors. If something important is missing, the field turns red: no instructor, no driver for taxi pickup, no time for boat pickup, no resort, no meal, or no boat. For each day, you can create trips — a boat going out at a particular time, with a set number of dive slots. Each slot can be named freely, or set to "Confined" with one tap. You can select many bookings at once to set bulk changes. Trips from the day before are copied automatically to save time.</p>
+    <img src="14_The Day tab.png" alt="Day tab view">
   </div>
 
   <div class="feature">
     <h3>Claims</h3>
-    <p>Sometimes an instructor collects payment directly, out on the boat. When this happens, the instructor sends a claim saying what they collected — for one customer, or several at once. A master checks each claim: confirm it to record the payment properly, or dismiss it if it was a mistake. Until a master confirms it, the instructor can see that it is still waiting.</p>
-    <div class="shot"><span>Claims list</span></div>
+    <p>Sometimes an instructor collects payment directly, out on the boat. When this happens, the instructor sends a claim. This says what they collected. They can do this for one customer, or for several at once. The master then confirms receiving the money in the shop.</p>
+    <img src="16_Claims.png" alt="Claims system">
   </div>
 
   <div class="feature">
-    <h3>Invoicing</h3>
-    <p>Email a customer a proper invoice showing exactly what they still owe — always correct and up to date. Invoice several customers at once. If a group of bookings came from the same agent or resort, send one combined invoice listing every student, date, and activity in one document.</p>
-    <div class="shot"><span>An invoice / agent statement</span></div>
+    <h3>Customer Details</h3>
+    <p>Tapping a booking opens the full customer record. It shows contact details: language, email, phone, nationality, age, date of birth, with a button to email the customer directly. It shows gear sizes and calculates BCD, wetsuit, and fin size. It shows diving level, dive count, and last dive. It shows meal preference. It shows waiver badges for liability, medical, and snorkel — each showing signed or not. A clear warning badge shows if the customer has a medical issue. If a customer has a doctor's fit-to-dive declaration, they can upload a photo instead of just ticking the medical box. If a booking is cancelled, a refund banner appears with an undo button. From this screen, staff can move the booking to a new date, see all past payments, get a link to send the customer, or show a QR code for the customer's app.</p>
+    <img src="18_Customer Details.png" alt="Customer details screen">
+  </div>
+
+  <div class="feature">
+    <h3>The Week tab</h3>
+    <p>The Week tab shows the same booking information for a full week.</p>
+    <img src="20_The Week tab.png" alt="Week tab view">
+  </div>
+
+  <div class="feature">
+    <h3>Money Overview</h3>
+    <p>Shows all the shop's money information in one place. Four boxes are always shown, no matter which time period is selected: money paid today, money still owed by customers, money owed to agents and resorts, and refunds that still need a decision. If a customer pays an agent directly, that amount is removed from what the shop owes the agent — this happens automatically. Staff can pick a longer period: a week, a month, a year, or a custom range. For a single day, this shows a simple list of payments. For a longer period, it shows income and unpaid amounts, broken down six ways: by activity, by payment method, by instructor, by nationality, by language, and by resort. Each breakdown has a table and a bar chart. There is also a meal count, payment method summary, and totals. Staff can send an invoice from here — for a single customer, or a combined invoice for an entire group of bookings from one agent or resort.</p>
+    <img src="22_Money Overview.png" alt="Money Overview dashboard">
   </div>
 
   <div class="feature">
     <h3>The Salary tab</h3>
-    <p>For each instructor: what they are owed, and what is still pending. The owed list shows date, customer, activity, a small icon for dive progress, and the salary or commission amount, with a subtotal per instructor and one button to mark everything as paid. A second list shows work that is not finished yet — kept separate so it does not get mixed up with money that is ready to pay. When two instructors share one day, each is only paid for their own part of the work. If nothing shows on either list, a "why?" link explains the reason.</p>
-    <div class="shot"><span>Salary tab, showing the dive-progress dots</span></div>
+    <p>The Salary tab shows, for each instructor, what they are owed and what is still pending. The "owed" list is a table showing date, customer, activity, dive progress, and the salary or commission amount. Each instructor gets a subtotal. One button marks everything as paid. A second list shows work that is not finished yet — this is kept separate so it does not get mixed up with money that is ready to pay. When two instructors share one day, each instructor is only paid for their own part. If nothing shows on either list, a "why?" link explains the reason.</p>
+    <img src="24_The Salary tab.png" alt="Salary tab">
+  </div>
+
+  <div class="feature">
+    <h3>The Ratings tab</h3>
+    <p>The Ratings tab shows customer feedback from post-dive rating emails. Customers rate their general experience (1-5 stars) and instructor (1-5 stars). It displays mean ratings overall, by activity, and by instructor. It shows the click-through rate to Google reviews. The ratings table shows each customer's name, activity, dive date, general rating, instructor name, instructor rating, and the date they clicked the Google review link. Ratings are collected automatically the day after each customer's last dive.</p>
+    <img src="25_1_The Ratings tab.png" alt="Ratings tab">
   </div>
 
   <div class="feature">
     <h3>The Search tab</h3>
-    <p>Search customers using more than 20 fields. Dropdowns: nationality, language, dive level, meal, activity, booking source, who booked them, payment method, resort, instructor. Free text: name, email, phone, passport, room, notes. Yes/no filters: medical issue, certified, registered with agency, own gear, snorkel waiver signed, e-learning done.</p>
-    <div class="shot"><span>Search tab and its results</span></div>
+    <p>The Search tab lets you search customers using more than 20 fields. Some are dropdowns: nationality, language, dive level, meal, activity, booking source, who booked them, payment method, resort, instructor. Some are free text: name, email, phone, passport, room, notes. Some are yes/no filters: medical issue, certified, registered with agency, own gear, snorkel waiver signed, e-learning done.</p>
+    <img src="26_The Search tab.png" alt="Search tab with 20+ fields">
   </div>
 
   <div class="feature">
     <h3>The DiveAgency tab</h3>
-    <p>Two simple lists: customers who still need agency registration, and customers who still need their certification finished. Each row shows name, activity, email, date of birth, date, and instructor, with a button to mark it done and a button to dismiss it.</p>
-    <div class="shot"><span>DiveAgency to-do lists</span></div>
+    <p>The DiveAgency tab has two simple lists. One list shows customers who still need agency registration. The other list shows customers who still need their certification finished. Each row shows name, activity, email, date of birth, date, and instructor. There is a button to mark it done, and a button to dismiss it.</p>
+    <img src="28_The DiveAgency tab.png" alt="DiveAgency registrations tab">
   </div>
 
   <div class="feature">
     <h3>The Gear tab</h3>
-    <p>Shortage alerts at the top. Below that, the result of the shop's automatic gear allocation for the day. Below that, the full equipment list. If a customer's height, weight, or shoe size is missing, staff get an alert — so nobody is left without gear assigned.</p>
-    <div class="shot"><span>Gear tab, showing the color-coded stock levels</span></div>
+    <p>The Gear tab shows shortage alerts at the top. Below that is the result of the shop's automatic gear allocation for the day. Below that is the full equipment list — item names and counts come from ScubaKit automatically, synced in every 15 minutes. If a customer's height, weight, or shoe size is missing, staff get an alert. This way, nobody is left without gear assigned. Staff can set a rental price for each item.</p>
+    <img src="30_The Gear tab.png" alt="Gear tab with allocations">
   </div>
 
   <div class="feature">
     <h3>The Private Boat tab</h3>
-    <p>A form to book a whole boat for a group — separate from normal activity bookings, because people on a private boat may not have their activities decided yet. It asks for date, boat, an optional lead booker name, their email, their WhatsApp, number of people, the boat fee, and payment method.</p>
-    <div class="shot"><span>Private Boat booking form</span></div>
+    <p>The Private Boat tab is a form to book a whole boat for a group. It is separate from normal activity bookings, because people on a private boat may not have their activities decided yet. It asks for: date, boat, an optional lead booker name, their email, their WhatsApp, number of people, the boat fee, and payment method.</p>
+    <img src="32_The Private Boat tab.png" alt="Private Boat booking tab">
   </div>
 
   <div class="feature">
     <h3>The Pickups tab</h3>
-    <p>A live map showing every driver and every instructor's current position, updating every 30 seconds. There is also a simple list view.</p>
-    <div class="shot"><span>Pickups tab — live map</span></div>
+    <p>The Pickups tab shows a live map. It shows every driver and every instructor's current position. It updates every 30 seconds. There is also a simple list view.</p>
+    <img src="34_The Pickups tab.png" alt="Live pickups map">
   </div>
 
   <div class="feature">
     <h3>Chat</h3>
-    <p>Group channels for each role: Masters, Instructors, Taxi, Kitchen, Boat Crew. Direct one-to-one messages. Customer chats too — one for general shop questions, and a second that goes straight to the customer's current instructor. Chat supports photos, shows if a message has been read, shows an unread count in the app, and on phones that support it, a badge on the home screen icon.</p>
-    <div class="shot"><span>Chat screen, showing the thread list</span></div>
+    <p>Chat works inside the master app too. There are group channels for each role: Masters, Instructors, Taxi, Kitchen, Boat Crew. There are direct one-to-one messages. There are also customer chats — one for general shop questions, and a second one that goes straight to the customer's current instructor. Chat supports photos. It shows if a message has been read. It shows an unread count in the app. On phones that support it, it also shows a badge on the home screen icon.</p>
+    <img src="36_Chat.png" alt="Chat interface">
   </div>
 
   <div class="feature">
     <h3>The QR tab</h3>
-    <p>QR codes for the shop, for each instructor, and for each resort's own booking page.</p>
-    <div class="shot"><span>QR tab</span></div>
+    <p>The QR tab has QR codes for the shop, for each instructor, and for each resort's own booking page.</p>
+    <img src="38_The QR tab.png" alt="QR codes tab">
   </div>
 
   <div class="feature">
     <h3>The top bar</h3>
-    <p>Always visible, no matter which tab is open. It shows the current date and time, a button to turn on notifications, and a Refresh button — all working on phone and computer. On a computer screen, three more buttons appear. Print prints whatever tab is open. Export downloads the current tab's data as a spreadsheet file — works for the Day tab, Details, Gear, Salary, Money Overview, Shop Settings, and DiveAgency. A "suggest" button sends feedback straight to DiveTower. There is also a Roster button, which prints a clean roster for any single boat.</p>
-    <div class="shot"><span>Top bar</span></div>
+    <p>The top bar is always visible, no matter which tab is open. It shows the current date and time. It has a button to turn on notifications. It has a Refresh button to reload the current tab. On a computer screen, there are three more buttons: Print prints whatever tab is open. Export downloads the current tab's data as a spreadsheet file. A "suggest" button sends feedback. There is also a Roster button. This opens a menu to print a clean roster for any single boat.</p>
+    <img src="40_The top bar.png" alt="Top bar interface">
+  </div>
+</section>
+
+<!-- SHOP SETTINGS -->
+<section id="settings">
+  <h2>Shop Settings</h2>
+  <p>Configure everything about how your shop works, in one organized place.</p>
+
+  <div class="feature">
+    <h3>Team & Staff</h3>
+    <p>Manages every role. Masters need a name, email, and password. Instructors also need: agency registration number, phone, WhatsApp, email, commission rate, nationality, languages, a photo, a toggle for logging in on days off, whether they're allowed to offer Pay Later on their own bookings, whether their own app shows their QR code, whether their own app shows an "Open booking form" button, and a date range for when they are unavailable. Drivers are the same, but instead of languages they have a maximum passenger number. Boat crew have the same Pay Later and QR/booking-link toggles as instructors and drivers. Kitchen staff just need name, phone, WhatsApp, email, and password. Boat types are also set up here: name and passenger capacity. Each role also gets its own QR code, so a new staff member can install their app right away.</p>
+    <img src="43_Team and Staff.png" alt="Team and Staff settings">
   </div>
 
   <div class="feature">
-    <h3>Shop Settings — 12 sections</h3>
-    <div class="shot"><span>Shop Settings menu grid</span></div>
+    <h3>Resorts & Agents</h3>
+    <p>Stores each resort's pickup time, email, an automatic booking link and QR code, and their commission rate. Agents get a name, email, and commission rate. A separate table holds the shop's general commission rates. These can be changed for a specific resort or a specific activity. You can also enter a booking from an agent or resort using a fast form: pick the agent, pick the date, and list the people. There is a shortcut to add several people at once.</p>
+    <img src="45_Resorts and Agents.png" alt="Resorts and Agents settings">
+  </div>
 
-    <h4>Team &amp; Staff</h4>
-    <p>Manages every role. Masters need a name, email, and password. Instructors also need: agency registration number, phone, WhatsApp, email, commission rate, nationality, languages, a photo, their own QR code, a toggle for logging in on days off, and a date range for when they are unavailable. Drivers are the same, but instead of languages they have a maximum passenger number. Boat crew and kitchen staff just need name, phone, WhatsApp, email, and password. Boat types are set up here too: name and passenger capacity. Each role gets its own QR code, so a new staff member can install their app right away.</p>
-    <div class="shot"><span>Team &amp; Staff settings screen</span></div>
+  <div class="feature">
+    <h3>Activities & Pricing</h3>
+    <p>Sets up everything about one activity in a single place: price, number of days, salary, certification cost, which agency it belongs to, whether it needs another certification first, and salary per dive. Right below that, the same screen also sets the activity's day-by-day structure — which dive slots happen on which day, and what gear each day needs. Number of dives is worked out automatically from that structure. Instructors see this as a checklist and check items off as the course happens.</p>
+    <img src="47_Activities and Pricing.png" alt="Activities and Pricing setup">
+  </div>
 
-    <h4>Resorts &amp; Agents</h4>
-    <p>Stores each resort's pickup time, a color (used to group them in the app), email, an automatic booking link and QR code, and their commission rate. Agents get a name, email, and commission rate. A separate table holds the shop's general commission rates, which can be changed for a specific resort or a specific activity. Staff can also enter a booking from an agent or resort using a fast form: pick the agent, pick the date, and list the people — with a shortcut to add several people at once if they are all doing the same activity and do not need to be named yet.</p>
-    <div class="shot"><span>Resorts &amp; Agents settings screen</span></div>
+  <div class="feature">
+    <h3>Special Fee Day</h3>
+    <p>For marine park or national park fees. A shop can set one or more date ranges, each with its own pattern. Ranges cannot overlap. There are separate fees for diving and snorkeling. Each of those splits into four amounts: local adult, local child, foreign adult, foreign child. Staff can also turn the fee on or off manually for any single day.</p>
+    <img src="49_Special Fee Day.png" alt="Special Fee Day configuration">
+  </div>
 
-    <h4>Activities &amp; Pricing</h4>
-    <p>Sets up each activity: price, number of days, salary, certification cost, which agency it belongs to, whether it needs another certification first, number of dives, and salary per dive.</p>
-    <div class="shot"><span>Activities &amp; Pricing settings screen</span></div>
+  <div class="feature">
+    <h3>Payments</h3>
+    <p>Lists every payment method the shop accepts: cash, QR codes, and five online providers (Stripe, PayPal, PayMongo, Opn, HitPay). Each online provider needs a connection link, set up once with that provider. This section also has the shop's currency (the full list of world currencies, over 100), and manual exchange rates for US dollars and euros.</p>
+    <img src="51_Payments.png" alt="Payment methods setup">
+  </div>
 
-    <h4>Special Fee Day</h4>
-    <p>For marine park or national park fees. Set one or more date ranges, each with its own pattern — ranges cannot overlap. A booking always keeps the fee that was active on its own date, even if the rules change later. Separate fees for diving and snorkeling, each split into four amounts: local adult, local child, foreign adult, foreign child. The fee can also be turned on or off manually for any single day.</p>
-    <div class="shot"><span>Special Fee Day settings screen</span></div>
+  <div class="feature">
+    <h3>Gear & Equipment</h3>
+    <p>Shows every item and size in the shop's ScubaKit, synced in automatically every 15 minutes. It shows total count, broken/unusable count, and available count (calculated automatically, with a color warning when low). You can set the rental price shown to customers. If ScubaKit has an item under a name the system doesn't recognize yet, staff get a one-time prompt to say what it actually is.</p>
+    <img src="53_Gear and Equipment.png" alt="Gear and Equipment inventory">
+  </div>
 
-    <h4>Payments</h4>
-    <p>Every payment method the shop accepts: cash, QR codes, and five online providers (Stripe, PayPal, PayMongo, Opn, HitPay). Each online provider needs a connection link, set up once. This section also has the shop's currency (six choices), and manual exchange rates for US dollars and euros.</p>
-    <div class="shot"><span>Payments settings screen</span></div>
+  <div class="feature">
+    <h3>Booking Sources</h3>
+    <p>Holds the shop's booking source list. It also holds settings for reading booking emails automatically from other platforms, and the email address a shop uses for that.</p>
+    <img src="55_Booking Sources.png" alt="Booking Sources setup">
+  </div>
 
-    <h4>Day Templates</h4>
-    <p>Plan each day of a multi-day course. The plan becomes a checklist that instructors check off as the course happens.</p>
-    <div class="shot"><span>Day Templates settings screen</span></div>
+  <div class="feature">
+    <h3>Waivers</h3>
+    <p>Covers the cancellation policy: how many days' notice is needed, and the time cutoff for when last bookings of the day are accepted. Staff can see exactly what text the customer will read. Shops can upload their own waiver documents instead of using the built-in ones. All waiver text is available in every supported language.</p>
+    <img src="57_Waivers.png" alt="Waivers configuration">
+  </div>
 
-    <h4>Gear &amp; Equipment</h4>
-    <p>Tracks every item and size the shop owns: total count, broken/unusable count, and available count — calculated automatically, with a color warning when low. It also shows the rental price.</p>
-    <div class="shot"><span>Gear &amp; Equipment settings screen</span></div>
+  <div class="feature">
+    <h3>Course Videos</h3>
+    <p>A shop can add one or more videos to any course. Each video has a name you choose (e.g. "Theory video PADI"), an agency (PADI, SSI, etc. or "Any"), the courses it belongs to, and a link for each language. A course can have more than one video. If a student's agency has no matching video, they are shown the "Any" video instead. If there is no video at all for that course, nothing is shown.</p>
+    <img src="59_Course Videos.png" alt="Course Videos management">
+  </div>
 
-    <h4>Booking Sources</h4>
-    <p>Holds the shop's meal list and booking source list, plus the settings for reading booking emails automatically from other platforms, and the email address the shop uses for that.</p>
-    <div class="shot"><span>Booking Sources settings screen</span></div>
-
-    <h4>Waivers</h4>
-    <p>Covers the cancellation policy: how many days' notice is needed, and the time cutoff. Staff can see exactly what text the customer will read. Shops can upload their own waiver documents instead of using the built-in ones. All waiver text is available in every supported language.</p>
-    <div class="shot"><span>Waivers settings screen, including the cancellation policy preview</span></div>
-
-    <h4>Course Videos</h4>
-    <p>Add a course video for each activity, in each language. If one combination has no video, the system falls back to a sensible choice. Skill demonstration videos — mask clearing, regulator recovery, and the rest — are managed here too, and instructors can re-send any of them to a student.</p>
-    <div class="shot"><span>Course Videos settings screen</span></div>
-
-    <h4>Locations</h4>
+  <div class="feature">
+    <h3>Locations</h3>
     <p>Manages the shop's map. Each business added gets a name, a category, a pin on the map, a description, and an optional discount code. Shops create their own categories, each with an emoji and a name.</p>
-    <div class="shot"><span>Locations settings screen and map</span></div>
+    <img src="61_Locations.png" alt="Locations map setup">
+  </div>
 
-    <h4>Shop Info &amp; Account</h4>
-    <p>Holds: certifying agency, shop name, WhatsApp number, email sender name, main email, a separate email for insurance notices, timezone, and links to Google reviews and Google Maps.</p>
-    <div class="shot"><span>Shop Info &amp; Account settings screen</span></div>
+  <div class="feature">
+    <h3>Shop Info & Account</h3>
+    <p>Holds: certifying agency, shop name, WhatsApp number, email sender name, main email, a separate email for insurance notices, timezone, the meal list, and links to Google reviews and Google Maps.</p>
+    <img src="63_Shop Info and Account.png" alt="Shop Info and Account settings">
   </div>
 
   <div class="feature">
     <h3>Trash</h3>
-    <p>Holds deleted bookings. When staff delete a booking, they can leave a short reason why. Deleted bookings can be restored, or deleted forever. If the customer's money was kept and not refunded, staff can mark this — so the income still counts in the shop's reports.</p>
-    <div class="shot"><span>Trash list</span></div>
+    <p>Trash holds deleted bookings. When staff delete a booking, they can leave a short reason why. Staff can restore a deleted booking, or delete it forever. If the customer's money was kept and not refunded, staff can mark this. That way, the income still counts in the shop's reports.</p>
+    <img src="65_Trash.png" alt="Trash recovery">
   </div>
 
   <div class="feature">
     <h3>Pending Late</h3>
-    <p>A list of bookings made after the shop's daily cutoff time. A master must approve or reject each one — they do not confirm automatically.</p>
-    <div class="shot"><span>Pending Late list</span></div>
+    <p>Pending Late is a list of bookings made after the shop's daily cutoff time. A master must approve or reject each one. They do not confirm automatically.</p>
+    <img src="67_Pending Late.png" alt="Pending Late approvals">
   </div>
 </section>
 
-<!-- ================= INSTRUCTOR ================= -->
-<section class="app" id="instructor">
+<!-- INSTRUCTOR APP -->
+<section id="instructor">
   <h2>Instructor app</h2>
+  <p>Everything you need in the water and on the boat. Students, gear, checklist, money all in one app.</p>
 
   <div class="feature">
-    <h3>My Trips</h3>
-    <p>Groups the instructor's day by boat and time. It shows each student's progress, using the shop's own names for each dive — not generic names. If the instructor is not the lead on a trip, it shows the real boatmaster's name instead. A one-tap button sends an estimated return time; once sent, it cannot be changed or sent again.</p>
-    <p>Tapping a student's card opens their details: meal and dietary note, certification level, number of dives, nationality, age, height, weight, shoe size, and notes. If the booking is cancelled, a refund banner appears with an undo button; if not, there is a button to start a refund. The dives section shows which boat the student is on. Below that is the checklist: confined water, each numbered dive, and the night dive — each one can have its own instructor, different from the day's main instructor. Any custom dive types also appear here. A waivers section shows if liability, safe-diving, medical, and youth waivers are signed. For certification courses, there is a section for e-learning, agency registration, the agency code, and final certification — with digital PADI and SSI forms handled right in the app. Students on the SSI Open Water course also get their full completion record here: every session and skill, plus both signatures. Payment is shown for reference only — actually collecting money happens in a separate Upgrade/QR tab, not here.</p>
-    <div class="shot"><span>Instructor's My Trips view — a trip card with the dive checklist</span></div>
-    <p>A "Call a driver" button lets an instructor call or WhatsApp any driver directly, right from the app.</p>
+    <h3>Students</h3>
+    <p>A toggle switches between "My Students" (just this instructor's own) and "All Students" for the day. Every student appears as its own card. Tapping a card opens the full detail: meal and dietary note, certification level, number of dives, nationality, age, height, weight, shoe size, and notes. If the booking is cancelled, a refund banner appears with an undo button. A checklist covers confined water, each numbered dive, and the night dive. Each dive can have its own instructor. A waivers section shows whether liability, safe-diving, medical, and youth waivers are signed. For certification courses, there is a section for e-learning, agency registration, the agency code, and final certification. SSI Open Water students see their full completion record: every session and skill, plus both signatures.</p>
+    <img src="70_Students.png" alt="Students view">
+  </div>
+
+  <div class="feature">
+    <h3>Gear</h3>
+    <p>Shows gear four ways: this instructor's own students first (sizes, or a note that they bring their own gear, plus any rentals), then every boat for the day grouped together regardless of instructor, then a shop-wide count of how many of each item are needed today against how many are actually usable, flagging any shortage. Below that is the full inventory, synced from ScubaKit.</p>
+    <img src="72_Gear.png" alt="Gear allocations">
+  </div>
+
+  <div class="feature">
+    <h3>Pickups</h3>
+    <p>Shows the same live driver map and pickup list available in the master app's Pickups tab, scoped to what's relevant for this instructor's day. A "Call a driver" button lets the instructor call or WhatsApp any driver directly.</p>
+    <img src="74_Pickups.png" alt="Pickups and driver maps">
+  </div>
+
+  <div class="feature">
+    <h3>To Do</h3>
+    <p>A filtered list of exactly which students still need something today: an outstanding balance, a missing waiver, missing e-learning or registration for a certification course, or an incomplete SSI completion record. Anyone with nothing outstanding simply does not appear.</p>
+    <img src="76_To Do.png" alt="To Do list for students">
+  </div>
+
+  <div class="feature">
+    <h3>Upgrade/QR</h3>
+    <p>Where an instructor actually collects money. Selecting a student shows their outstanding balance, with a way to record what was received and how, or show a QR code for the student to pay directly. The same screen lets the instructor upgrade a student to a different activity, entering the new price and optionally collecting a deposit for it on the spot. Below that is the instructor's own personal booking QR code and link — bookings made through it are tracked back to that instructor for commission.</p>
+    <img src="78_Upgrade_QR.png" alt="Upgrade and QR codes">
+  </div>
+
+  <div class="feature">
+    <h3>Salary</h3>
+    <p>Shows what this instructor is owed: total salary and commission, then a breakdown per student with a row of small dots showing exactly which dives are marked done. A separate section covers work that is not eligible for payment yet, because it has not been marked done.</p>
+    <img src="80_Salary.png" alt="Salary breakdown">
+  </div>
+
+  <div class="feature">
+    <h3>Roster</h3>
+    <p>A shop-wide view of every trip for the day, not just this instructor's own — everyone's boat, pax count, and tank count in one place. Each trip lists the boatmaster, then every student grouped by which instructor is running them, with any per-dive instructor difference shown as a small note. Useful for checking who else is out that day.</p>
+    <img src="82_Roster.png" alt="Full day roster">
   </div>
 
   <div class="feature">
     <h3>Chat</h3>
-    <p>Works the same way as the master app, but shows only what is relevant to that instructor.</p>
-    <div class="shot"><span>Instructor Chat screen</span></div>
+    <p>The same group channels as the master app — Masters, Instructors, Taxi, Kitchen, Boat Crew — plus direct messages to anyone in them, and the same customer chats, scoped to this instructor's own students. An Announcements thread receives anything broadcast to everyone.</p>
+    <img src="84_Chat.png" alt="Chat interface">
   </div>
 </section>
 
-<!-- ================= TAXI ================= -->
-<section class="app" id="taxi">
+<!-- TAXI APP -->
+<section id="taxi">
   <h2>Taxi app</h2>
+  <p>Know exactly who to pick up, when, where. Call or WhatsApp customers direct from the app.</p>
 
   <div class="feature">
     <h3>Pickups</h3>
-    <p>A sorted list of who to pick up and when. Each card shows the resort (with a color), room number, and activity. One-tap buttons to call or WhatsApp the customer, and a button to mark them picked up. Finished pickups turn grey but stay visible, until every pickup for the day is done.</p>
-    <div class="shot"><span>Taxi Pickups list</span></div>
+    <p>Pickups shows a sorted list of who to pick up and when. Each card shows the resort (with a color), room number, and activity. There are one-tap buttons to call or WhatsApp the customer. There is a button to mark them picked up. Finished pickups turn grey but stay visible, until every pickup for the day is done.</p>
+    <img src="87_Pickups.png" alt="Pickup list">
   </div>
 
   <div class="feature">
     <h3>Return drop-offs</h3>
-    <p>A separate list, grouped by trip, sorted by which boat is arriving soonest. Each student has their own "dropped off" button.</p>
-    <div class="shot"><span>Return drop-offs list</span></div>
-  </div>
-
-  <div class="feature">
-    <h3>The customer map</h3>
-    <p>Shows the live location of any customer who has chosen to share it, updating every 30 seconds. A separate map shows the current location of every instructor, so a driver can see where they are too.</p>
-    <div class="shot"><span>Taxi customer map, showing driver and customer markers</span></div>
+    <p>A separate list. It groups by trip. It sorts by which boat is arriving soonest. Each student has their own "dropped off" button. Shows the live location of any customer who has chosen to share it. It updates every 30 seconds. A separate map shows the current location of every instructor.</p>
+    <img src="89_Return drop-offs.png" alt="Return drop-offs list">
   </div>
 
   <div class="feature">
     <h3>Chat</h3>
-    <p>Works the same way. All drivers share one "Taxi" identity, since drivers do not need their own login.</p>
-    <div class="shot"><span>Taxi Chat screen</span></div>
+    <p>The same group channels as the other apps — Masters, Instructors, Taxi, Kitchen, Boat Crew — plus direct messages to anyone in them, using the driver's own real name, since drivers log in individually now. There are no customer-specific chat threads here, unlike the instructor app.</p>
+    <img src="91_Chat.png" alt="Chat for drivers">
   </div>
 </section>
 
-<!-- ================= KITCHEN ================= -->
-<section class="app" id="kitchen">
+<!-- KITCHEN APP -->
+<section class="app-solo" id="kitchen">
   <h2>Kitchen app</h2>
-
-  <div class="feature">
-    <p>One simple screen. Live counts for each meal type needed that day, a separate card for any less common meal, and a list of customers with special dietary notes. It refreshes on its own every two minutes.</p>
-    <div class="shot"><span>Kitchen app meal-count dashboard</span></div>
-    <p>Kitchen staff can also use chat, the same as every other role.</p>
-    <div class="shot"><span>Kitchen app Chat screen</span></div>
-  </div>
+  <p>See exactly how many meals you need, today and this month. Dietary notes for every customer.</p>
+  <p>The kitchen app is one simple screen. It shows live counts for each meal type needed that day and a monthly count. It shows a list of customers with special dietary notes. It refreshes on its own every two minutes.</p>
+  <img src="93_Kitchen app.png" alt="Kitchen app meal counts">
 </section>
 
-<!-- ================= BOAT CREW ================= -->
-<section class="app" id="boatcrew">
+<!-- BOAT CREW APP -->
+<section class="app-solo" id="boatcrew">
   <h2>Boat crew app</h2>
-
-  <div class="feature">
-    <p>The boat crew app is small — by design. Besides chat, it has two things: the same trip roster that instructors and masters see, and a pickups view with a live driver map. There is nothing else. A small, focused app.</p>
-    <div class="shot"><span>Boat crew app</span></div>
-  </div>
+  <p>See every trip, every boat, every person. Know when drivers are heading back.</p>
+  <p>The boat crew app is small. It has chat, the same trip roster that instructors and masters see, and a pickups view with a live driver map. It also shows the personal QR code for bookings.</p>
+  <img src="95_[Boat crew app.png" alt="Boat crew app">
 </section>
 
-<!-- ================= CUSTOMER ================= -->
-<section class="app" id="customer">
+<!-- CUSTOMER APP -->
+<section id="customer">
   <h2>Customer app</h2>
-  <p class="intro">After booking, every customer gets their own private app. No account, no password, no app store — just a personal link. It covers their whole trip.</p>
+  <p>Everything they need before, during, and after their dive. Transparent, simple, reassuring.</p>
 
   <div class="feature">
     <h3>Pickup tab</h3>
-    <p>Shows their next pickup time, once one is set. A button lets them share their live location, so the driver can find them. Once a driver is on the way, a map appears showing the driver's position and their own, so they can watch the driver approach. It also shows their past pickups.</p>
-    <div class="shot"><span>Customer app Pickup tab — map view</span></div>
+    <p>Shows their next pickup time, once one is set. There is a button to share their live location, so the driver can find them. Once a driver is on the way, a map appears showing the driver's position and the customer's own position, so they can watch the driver approach. It also shows their past pickups.</p>
+    <img src="98_Pickup tab.png" alt="Pickup tracking">
   </div>
 
   <div class="feature">
     <h3>My Diving tab</h3>
-    <p>The tab with the most information. A preparation video, matched to their language — with a sensible fallback if there is no exact match. Alongside it, skill demonstration videos — mask clearing, regulator recovery, and the other skills — so a student can watch a skill again the evening before, as many times as they like. An instructor can also re-send any video to a student who needs another look. Together with their digital paperwork in the same app, students arrive prepared. A QR code (and link) confirming agency certification, when relevant. A day-by-day schedule: which boat and which instructor each day. A progress section: e-learning status if they are registered, a checkmark for each finished dive, and an overall percentage. Their gear: either "own gear," or their exact BCD, wetsuit, fin, and weightbelt sizes. SSI Open Water students also see their own copy of the completion record here — they cannot edit it, except to add their own signature (and clear it, if added by mistake).</p>
-    <div class="shot"><span>Customer app My Diving tab — progress bar and schedule</span></div>
+    <p>It shows a button to watch a preparation video, matched to their language and agency. If there is no exact match, it falls back to a good choice. There is a button for a summary of the open water theory text, with practice questions. It may show a QR code confirming agency certification. It shows a day-by-day schedule: which boat and which instructor each day. It shows a progress section: e-learning status if they are registered, a checkmark for each finished dive, and an overall percentage. It shows their gear: either "own gear," or their exact BCD, wetsuit, fin, and weightbelt sizes. SSI Open Water students also see their own copy of the completion record. They cannot edit it, except they can add their own signature. They can also clear their signature if it was added by mistake.</p>
+    <img src="99_HEADING_My Diving tab.png" alt="My Diving tab">
   </div>
 
   <div class="feature">
     <h3>Locations tab</h3>
-    <p>A map with the shop's own location always pinned. Every other business the shop has added is shown too, each with its own category icon. Below the map, the same places are listed in full, with description and discount code shown directly — not hidden behind the pin.</p>
-    <div class="shot"><span>Customer app Locations tab — map</span></div>
+    <p>Shows a map. The shop's own location is always pinned. Every other business the shop has added is also shown, each with its own icon for its category. Below the map, the same places are listed in full, with description and discount code shown directly.</p>
+    <img src="105_Locations tab.png" alt="Locations map and info">
   </div>
 
   <div class="feature">
     <h3>My Details tab</h3>
-    <p>The customer's full booking information, editable by the customer. It is the same form used everywhere else in the system.</p>
-    <div class="shot"><span>Customer app My Details tab</span></div>
+    <p>Shows a payment summary — total, paid, and balance — followed by the customer's full booking information, which they can edit here. This is the same form used everywhere else in the system.</p>
+    <img src="107_My Details tab.png" alt="My Details editing">
   </div>
 
   <div class="feature">
     <h3>Chat tab</h3>
-    <p>Message the shop directly. Once they have a current instructor, they can also message that instructor directly, as a second option.</p>
-    <div class="shot"><span>Customer app Chat tab</span></div>
+    <p>Lets the customer message the shop. Once they have a current instructor, they can also message that instructor directly, as a second option.</p>
+    <img src="109_Chat tab.png" alt="Customer chat">
   </div>
 </section>
 
-<!-- ================= BOOKING FORM ================= -->
-<section class="app" id="booking">
+<!-- PUBLIC BOOKING FORM -->
+<section class="app-solo" id="booking">
   <h2>Public booking form</h2>
-
-  <div class="feature">
-    <p>A customer booking online picks a date, then adds one or more people to the booking. Each person needs a name, an email, and an activity. Prices show live as they pick. They can also add rental gear. If an activity needs an existing certification, the form checks this automatically — it will not let them continue until they confirm it.</p>
-    <div class="shot"><span>First step of the booking form — adding people and picking activities</span></div>
-    <p>A review screen then shows each person's price, any rentals, the total, the date, and the payment method — before they pay. Checkout supports five payment providers, so a shop does not depend on just one. If someone tries to book too late in the evening for a same-day or next-day slot, the system explains why, and offers the next date that is actually free.</p>
-    <div class="shot"><span>Booking form review screen</span></div>
-    <p>Staff booking a customer in person get two extra things: a lookup that finds returning customers by name and fills in their details, and the ability to add a discount.</p>
-  </div>
+  <p>Customers book online. Prices show live. Everything is clear before they pay.</p>
+  <p>A customer booking online picks a date. They add one or more people to the booking. Each person needs a name, an email, and an activity. Prices show live as they pick. They can also add rental gear. If an activity needs an existing certification, the form checks this automatically. A review screen then shows: each person's price, any rentals, the total, the date, and the payment method. This is shown before they pay. Checkout supports five payment providers. If someone tries to book too late for a same-day or next-day slot, the system explains why and offers the next available date. Staff booking a customer in person get two extra things: a lookup that finds returning customers by name and fills in their details, and the ability to add a discount or pay later.</p>
+  <img src="111_Public booking form.png" alt="Public booking form">
 </section>
 
 </main>
